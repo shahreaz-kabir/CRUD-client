@@ -13,6 +13,13 @@ export const fetchAllCampuses = (campuses) => {
   };
 };
 
+export const deleteCampus = (id) => {
+  return {
+    type: at.DELETE_CAMPUS,
+    payload: id,
+  };
+};
+
 //Single Campus
 export const fetchCampus = (campus) => {
   return {
