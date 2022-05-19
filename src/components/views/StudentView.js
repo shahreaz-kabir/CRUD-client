@@ -18,7 +18,11 @@ const StudentView = (props) => {
       </Link>
       <p>{student.email}</p>
       <p>GPA: {student.gpa}</p>
+      <Link to={`/editstudent/${student.id}`}>
+          <button>Edit</button>
+      </Link>
     </div>
+
   );
 
 };
